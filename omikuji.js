@@ -11,20 +11,25 @@ document.getElementById("name").innerHTML = userName;
 
 let randNum = Math.floor(Math.random() * 5);
 
-if (randNum == 0) {
-    userResult = "大吉";
-}
-if (randNum == 1) {
-    userResult = "中吉";
-}
-if (randNum == 2) {
-    userResult = "小吉";
-}
-if (randNum == 3) {
-    userResult = "吉";
-}
-if (randNum == 4) {
-    userResult = "凶";
+switch (randNum) {
+    case 0:
+        userResult = "大吉";
+        break;
+
+    case 1:
+        userResult = "中吉";
+        break;
+
+    case 2:
+        userResult = "小吉";
+        break;
+
+    case 3:
+        userResult = "吉";
+        break;
+
+    default:
+        userResult = "凶";
 }
 
 document.getElementById("result").innerHTML = userResult;
