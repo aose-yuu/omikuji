@@ -21,3 +21,5 @@ if (randNum == 3) {
 if (randNum == 4) {
     userResult = "凶";
 }
+
+document.getElementById("result").innerHTML = userResult;
